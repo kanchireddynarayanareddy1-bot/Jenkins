@@ -22,7 +22,7 @@ pipeline {
         password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
     }
     stages {
-        // this is buuild section check the build section
+        // this is buuild section check the build section for githubwebhook
         stage('Build') {
             steps {
                 script {
