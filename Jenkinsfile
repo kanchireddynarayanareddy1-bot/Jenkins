@@ -28,6 +28,7 @@ pipeline {
                         echo "Hello ${Course}"
                     """
                 }
+            }    
         }
         stage('Deploy') {
             steps {
