@@ -8,7 +8,7 @@ pipeline {
         Course="Jenkins"
     }
     options {
-        timeout(time: 10, unit: 'SECONDS')  
+        timeout(time: 10, unit: 'MINUTES')  
     }
     parameters {
         string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
