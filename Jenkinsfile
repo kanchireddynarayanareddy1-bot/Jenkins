@@ -12,9 +12,9 @@ pipeline {
             steps {
                 script {
                     sh """
-                    echo 'Building..'
-                    echo "Hello ${Course}"
-                    env 
+                        echo 'Building..'
+                        echo "Hello ${Course}"
+                        env 
                     """
                 }
                 
@@ -24,8 +24,8 @@ pipeline {
             steps {
                 script {
                     sh """
-                    echo 'Testing..'
-                    echo "Hello ${Course}"
+                        echo 'Testing..'
+                        echo "Hello ${Course}"
                     """
                 }
         }
@@ -33,8 +33,8 @@ pipeline {
             steps {
                 script {
                     sh """
-                    echo 'Deploying..'
-                    echo "Hello ${Course}"
+                        echo 'Deploying..'
+                        echo "Hello ${Course}"
                     """
                 }
             }
