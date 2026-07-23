@@ -10,18 +10,33 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
-                echo "Course name is ${Course}"
+                script {
+                    sh """
+                    echo 'Building..'
+                    echo "Hello ${Course}"
+                    env 
+                    """
+                }
+                
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
-            }
+                script {
+                    sh """
+                    echo 'Testing..'
+                    echo "Hello ${Course}"
+                    """
+                }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                script {
+                    sh """
+                    echo 'Deploying..'
+                    echo "Hello ${Course}"
+                    """
+                }
             }
         }
     }
