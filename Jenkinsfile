@@ -6,6 +6,7 @@ pipeline {
     }
     environment { 
         Course="Jenkins"
+        Training="DevOps"
     }
     options {
         timeout(time: 10, unit: 'MINUTES')  
@@ -29,6 +30,7 @@ pipeline {
                     sh """
                         echo 'Building..'
                         echo "Hello ${Course}"
+                        echo "Training: ${Training}"
                         sleep 10
                         env 
                         echo "Hello ${params.PERSON}"
